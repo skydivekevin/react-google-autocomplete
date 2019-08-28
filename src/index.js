@@ -18,7 +18,7 @@ export default class ReactGoogleAutocomplete extends React.Component {
 
   componentDidMount() {
     const {
-      types = ['(regions)'],
+      types = ['(geocode)'],
       componentRestrictions,
       bounds,
       fields = [
@@ -103,7 +103,7 @@ export class ReactCustomGoogleAutocomplete extends React.Component {
   }
 
   onChange(e) {
-    const { types = ['(address_component)'] } = this.props;
+    const { types = ['(geocode)'] } = this.props;
 
     if (e.target.value) {
       this.service.getPlacePredictions(
