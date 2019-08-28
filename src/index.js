@@ -22,7 +22,7 @@ export default class ReactGoogleAutocomplete extends React.Component {
       componentRestrictions,
       bounds,
       fields = [
-        'address_components',
+        'address_component',
         'geometry.location',
         'place_id',
         'formatted_address'
