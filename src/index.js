@@ -103,7 +103,7 @@ export class ReactCustomGoogleAutocomplete extends React.Component {
   }
 
   onChange(e) {
-    const { types = ['(cities)'] } = this.props;
+    const { types = ['(address_component)'] } = this.props;
 
     if (e.target.value) {
       this.service.getPlacePredictions(
