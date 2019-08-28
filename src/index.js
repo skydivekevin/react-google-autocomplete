@@ -18,7 +18,7 @@ export default class ReactGoogleAutocomplete extends React.Component {
 
   componentDidMount() {
     const {
-      // types = ['(cities)'],
+      types = ['(regions)'],
       componentRestrictions,
       bounds,
       fields = [
